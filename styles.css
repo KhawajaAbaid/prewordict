@@ -44,7 +44,7 @@ html, body{
 .nav a{
     display: inline-block;
     padding: 0.1em;
-    color: white;
+    color: #F4F1DE;
     text-decoration: None;
 }
 
@@ -107,26 +107,49 @@ html, body{
 
 
 .user-input-section{
-    margin: 0;
+    max-width: 1000px;
+    margin-top: 10px;
     padding: 0;
+    text-align: center;
 }
 
 .user-input-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+    display: block;
+    text-align: center;
+    border: none;
     padding: 0;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 10%;
+    font-family: coolFont;
+    font-size: 1.5em;
+    color: #365948;
+}
+.user-input-box:focus{
+    border: #F4F1DE solid 3px;
 }
 
 .user-predict-button{
-    margin: 0;
-    padding: 0;
-    background-color: #E07A5F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0.1em;
+    background-color: #313349;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10%;
     font-size: 1.5em;
     font-weight: bold;
     cursor: pointer;
+    font-family: coolFont;
+    font-size: 2em;
+    text-align: center;
+    width: 4em;
+    color: #F4F1DE;
+}
+.user-predict-button:hover{
+    background-color: #365948;
+    color: #F4F1DE;
 }
