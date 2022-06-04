@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="styles.css">
 <html>
     <head>
         <title> Prewordict | Predict the Word in the Word Cloud!</title>
+        <meta name="Prewordict is a nerd game where you guess a word that
+        would fit in the give cloud of words or a wordcloud">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1> Prewordict </h1>
-        <h2> Predict the word in the word cloud!</h2>
-
+        <header class="main-header">
+            <h1 class="game-title">Prewordict</h1>
+            <h2 class="game-tag"> Predict a word that belongs to the cloud!</h2>
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="#">Rules</a></li>
+                    <li><a href="#">Developer</a></li>
+                    <li><a href="#">How it Works?</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="game-section container">
+            <h2 class="lets-predict-title">Let's Predict!</h2>
+            <div>
+                <div class="actual-play-area">
+                    <img class="cloud-image" src="clouds_and_words/cluster_2_cloud.png"
+                    width="600px">
+                </div>
+                <div class="user-input-section">
+                    <input class="user-input-box" type="text" placeholder="Your Prediction">
+                    <button class="user-predict-button">Predict!</button>
+                </div>
+            </div>
+        </section>
         <footer>
             <h3> For more such nerdy games and other cool projects, visit:</h3>
             <h2><a href="https://khawajaabaid.github.io">khawajaabaid.github.io</a></h2>

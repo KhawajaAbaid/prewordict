@@ -1,12 +1,132 @@
+@font-face {
+    font-family: coolFont;
+    src: url("fonts/SnowHut.ttf");
+}
+
 html, body{
     margin: 0;
     padding: 0;
+    font-family: coolFont;
 }
 
-h1{
+.game-title{
+    display: flexbox;
+    font-size: 6em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #3D405B;
+}
+
+.game-tag{
+    margin:0;
+    padding: 0;
+    padding-bottom: 10px;
+    color: #E07A5F;
+    text-align: center;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #F4F1DE;
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: 0.1em;
+    color: white;
+    text-decoration: None;
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #3D405B;
+    height: 30px;
+}
+
+.main-nav li{
+    padding: 0 5%;
+    align-items: middle;
+    color: #F4F1DE;
+}
+
+.main-nav li:hover{
+    padding: 0 5%;
+    background-color: #212231;
+}
+
+.main-nav a:hover{
+}
+
+.main-header{
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+}
+
+.game-section{
+    margin: 1em;
+    padding: 0;
+}
+.actual-play-area{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.lets-predict-title{
     font-size: 2em;
     font-weight: bold;
     text-align: center;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    color: #3D405B;
+}
+
+.cloud-image{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 3px;
+    border: #3D405B solid 3px;
+}
+
+
+.user-input-section{
+    margin: 0;
+    padding: 0;
+}
+
+.user-input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.user-predict-button{
+    margin: 0;
+    padding: 0;
+    background-color: #E07A5F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
 }
