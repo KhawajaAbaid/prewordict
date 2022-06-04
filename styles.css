@@ -83,6 +83,8 @@ html, body{
 }
 .actual-play-area{
     display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5em;
@@ -164,4 +166,12 @@ html, body{
 }
 .details li{
     font-size: 1.2em;
+}
+
+.result-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0, auto;
+    padding: 0;
 }
