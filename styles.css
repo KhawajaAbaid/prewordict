@@ -241,3 +241,38 @@ html, body{
 .the-end-image{
     margin: 2em;
 }
+
+.highlight-text{
+    color: #E07A5F;
+}
+
+.main-footer{
+    background-color: #365948;
+    color:#F4F1DE;
+    padding: 0.1em;
+}
+.footer-text{
+    display: block;
+    text-align: center;
+    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    padding: 0;
+}
+.footer-link{
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5em;
+    color:#E07A5F;
+}
+
+.footer-link a{
+    color:#E07A5F;
+}
+
+.footer-link a:hover{
+    color: #8f8d7f;
+}
