@@ -133,15 +133,13 @@ html, body{
     border: #F4F1DE solid 3px;
 }
 
-.user-predict-button{
+.button{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     margin-top: 10px;
     padding: 0.1em;
-    background-color: #313349;
-    color: white;
     border: none;
     border-radius: 10%;
     font-size: 1.5em;
@@ -151,11 +149,35 @@ html, body{
     font-size: 2em;
     text-align: center;
     width: 4em;
+}
+.user-predict-button{
+    background-color: #313349;
     color: #F4F1DE;
 }
 .user-predict-button:hover{
     background-color: #365948;
     color: #F4F1DE;
+}
+
+.user-next-cloud-button{
+    background-color: #365948;
+    color: #F4F1DE;
+    width: 6em;
+}
+.user-next-cloud-button:hover{
+    background-color: #68b08d;
+    color: #8f8d7f;
+}
+
+.user-try-again-button{
+    background-color: #E07A5F;
+    color: #F4F1DE;
+    width: 7em;
+}
+
+.user-try-again-button:hover{
+    background-color: #f7b8b8;
+    color: #8f8d7f;
 }
 
 .container{
