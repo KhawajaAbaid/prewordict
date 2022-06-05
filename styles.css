@@ -100,6 +100,43 @@ html, body{
     color: #3D405B;
 }
 
+.won_h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #365948;
+}
+
+.won_h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 1em;
+    padding-bottom: 0;
+    color: #3D405B;
+}
+
+.lost_h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #E07A5F;
+}
+
+.lost_h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #3D405B;
+}
+
 .cloud-image{
     width: 100%;
     height: auto;
@@ -169,6 +206,7 @@ html, body{
     color: #8f8d7f;
 }
 
+
 .user-try-again-button{
     background-color: #E07A5F;
     color: #F4F1DE;
@@ -178,6 +216,10 @@ html, body{
 .user-try-again-button:hover{
     background-color: #f7b8b8;
     color: #8f8d7f;
+}
+
+.the-end-button{
+    width: 9em;
 }
 
 .container{
@@ -197,4 +239,8 @@ html, body{
     align-items: center;
     margin: 0, auto;
     padding: 0;
+}
+
+.the-end-image{
+    margin: 2em;
 }
