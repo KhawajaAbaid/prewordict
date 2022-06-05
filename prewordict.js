@@ -46,14 +46,13 @@ function predictButtonClicked(){
     parent_div_of_user_input.getElementsByClassName("user-try-again-button")[0].addEventListener('click', tryAgainButtonClicked);
 }
 
-function nextCloudButtonClicked(){
-    console.log("next cloud button clicked")
+function resetScreen(){
+    // removes result contents and replaces with original
     game_section = document.getElementsByClassName("game-section")[0]
     h2_heading = game_section.getElementsByTagName("h2")[0];
-    game_section_image = game_section.getElementsByTagName("img")[0];
-    parent_div_of_img = game_section_image.parentElement;
+    parent_div_of_img = game_section.getElementsByTagName("div")[0];
     game_section.removeChild(h2_heading);
-    parent_div_of_img.removeChild(game_section_image);
+    game_section.removeChild(parent_div_of_img);
     game_section.innerHTML = `
         <h2 class="lets-predict-title">Let's Predict!</h2>
         <div>
@@ -71,9 +70,16 @@ function nextCloudButtonClicked(){
             </div>
     `
     user_input_section.getElementsByClassName("user-predict-button")[0].addEventListener('click', predictButtonClicked);
+
+}
+
+function nextCloudButtonClicked(){
+    console.log("next cloud button clicked")
+    resetScreen();
     cloud_num += 1;
 }
 
 function tryAgainButtonClicked(){
-    console.log("try again button clicked")
+    console.log("try again button clicked");
+    resetScreen();
 }
