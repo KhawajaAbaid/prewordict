@@ -22,8 +22,9 @@ html, body{
 
 .game-tag{
     margin:0;
+    margin-top: -0.6em;
     padding: 0;
-    padding-bottom: 0.5em;
+    margin-bottom: 0.4em;
     color: #E07A5F;
     text-align: center;
 }
