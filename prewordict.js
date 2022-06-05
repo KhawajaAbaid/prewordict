@@ -10,7 +10,7 @@ function ready(){
     predictButtonClicked)
 }
 
-var cloud_num = 29;
+var cloud_num = 1;
 async function predictButtonClicked(){
     // console.log("predict button clicked");
     var prediction = document.getElementsByClassName("user-input-box")[0].value;
