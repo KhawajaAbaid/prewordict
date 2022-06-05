@@ -187,8 +187,8 @@ function nextCloudButtonClicked(){
     // btw the upper three comment lines were written by github copilot.
     // **Pets the Github Copilot** 'good boy'
     // console.log("next cloud button clicked")
-    resetScreen();
     cloud_num += 1;
+    resetScreen();
     if (cloud_num>29){
         cueTheEnd();
     }
