@@ -112,8 +112,8 @@ function displayResultScreen(prediction_result){
     var img_parent = imageElem.parentElement
     img_parent.removeChild(imageElem)
     
-    var won_image_path = "images/peepoCheer.png";
-    var lost_image_path = "images/Sadge.png";
+    var won_image_path = "images/PeepoCheer.png";
+    var lost_image_path = "images/sadge.png";
 
     var won_h1 = "Congratulations!";
     var won_h2 = "Your prediction is correct!";
