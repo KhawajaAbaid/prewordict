@@ -1,3 +1,7 @@
+// TODO: implement randomization for the image that's displayed
+// TODO: generate the rest of the word clouds in batches or groups
+// TODO: write a script to measure the input-target similarity score and display it back to the user
+
 if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready)
 }
