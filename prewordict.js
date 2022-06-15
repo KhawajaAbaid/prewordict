@@ -197,7 +197,7 @@ function nextCloudButtonClicked(){
     // btw the upper three comment lines were written by github copilot.
     // **Pets the Github Copilot** 'good boy'
     // console.log("next cloud button clicked")
-    cloud_num = Math.floor(Math.random()*30);
+    cloud_num = generateNewUniqueCloudNum();
     all_prev_cloud_nums.push(cloud_num)
     resetScreen();
     // if all_prev_clouds_nums list grows to 30 elements then that means
@@ -206,6 +206,21 @@ function nextCloudButtonClicked(){
     if (all_prev_cloud_nums.length==30){
         cueTheEnd();
     }
+}
+
+function generateNewUniqueCloudNum(){
+
+    // generate a random number between 1 and 30
+    // if the number is already in the all_prev_cloud_nums list then generate a new number
+    // and check again until a unique number is generated
+    var new_cloud_num = Math.floor(Math.random() * 30) + 1;
+    while (all_prev_cloud_nums.includes(new_cloud_num)){
+        new_cloud_num = Math.floor(Math.random() * 30) + 1;
+    }
+    return new_cloud_num;
+
+    // just btw this whole thing was written by github copilot. (^_^) 
+    //(abaid here, even the comment above was written by github copilot, lol amazing.)
 }
 
 function tryAgainButtonClicked(){
