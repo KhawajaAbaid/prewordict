@@ -14,7 +14,13 @@ function ready(){
     predictButtonClicked)
 }
 
+// keeps track of all the clouds that have been displayed
+// so as to avoid showing one cloud multiple times to the user
+var all_prev_cloud_nums = [];
 var cloud_num = 1;
+all_prev_cloud_nums.push(cloud_num);
+
+
 async function predictButtonClicked(){
     // console.log("predict button clicked");
     var prediction = document.getElementsByClassName("user-input-box")[0].value;
@@ -191,9 +197,13 @@ function nextCloudButtonClicked(){
     // btw the upper three comment lines were written by github copilot.
     // **Pets the Github Copilot** 'good boy'
     // console.log("next cloud button clicked")
-    cloud_num += 1;
+    cloud_num = Math.floor(Math.random()*30);
+    all_prev_cloud_nums.push(cloud_num)
     resetScreen();
-    if (cloud_num>29){
+    // if all_prev_clouds_nums list grows to 30 elements then that means
+    // the user has played 30 clouds and the game is over - thank you github copilot for assisting me
+    // write these comments! <3
+    if (all_prev_cloud_nums.length==30){
         cueTheEnd();
     }
 }
