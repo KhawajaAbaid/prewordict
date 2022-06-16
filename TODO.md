@@ -1,3 +1,7 @@
+Disclaimer: The conetents of this file are highly classified and peronalized. Please keep in mind that
+I've written here things as I've thought of them. And as you'll see, I write down things like I'm explaining
+them to a group of friends working on this project (i wish i had friends like that :'( ) - not exactly like that but kind of like that:p.
+
     (A) #Add Randomization for the image that is displayed.    {cm:2022-06-16}
     (B) Develop the rest of word clouds
     (C) Add script for input-target cloud similarity score as response
@@ -11,3 +15,23 @@
                 and then calculate the similaity between a given word and cluster of words.
                 Or calculate embeddings for each cluster and then use that to calculate similarity.
                 i'm not sure at this point.
+
+    OKAY OKAY OKAY! I just thought of this idea on how to calculate word similairty.
+        
+        Spoiler alert: it involves manual labeling
+
+        So the idea is that, 
+
+        i- For now, save the words that belong to each cluster in a file.
+        
+        ii- Here's the most important step:
+            Label each cluster with a category name after studying its word cloud image/words that you think it belongs. That has to be done manually. There's no way around it, or it's how this feels like right now. But regardless it should be  easy enough, though time consuming.
+        
+        iii- Create a one-hot enconding of all the words in a single cluster for each cluster.
+        
+        iv- Assign each one hotted vector a category id, i.e. the category we assigned to the cluster to which this vector belongs.
+
+        v- Use dense or lstm layers to train a multilabel classification model.
+
+
+        vi- Since we'll have top 100 words (probably should lower it tbh) as the pool of possible answers, and user has to guess one of them. But each cluster would contain a lot more words than that. So, when the user enters a word, if the word is in our vocabulary we'll have a caluclated score, and display it accordingly. Otherwise we can display a message saying or something like your guess is way to far or not close or something.
