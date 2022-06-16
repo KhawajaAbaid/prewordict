@@ -9,15 +9,31 @@ html, body{
     font-family: coolFont;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
 .game-title{
-    display: flexbox;
     font-size: 6em;
     font-weight: bold;
-    text-align: center;
+    /* text-align: center; */
     margin: 0;
+    margin-left: 0.5em;
     padding: 0;
     margin-top: 0.1em;
     color: #3D405B;
+}
+
+.version_name{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.1em;
+    color: #365948;
 }
 
 .game-tag{
