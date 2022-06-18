@@ -59,62 +59,6 @@ async function getClusterWordsFR(url) {
     return clusterWords;
 }
 
-// this function copied from stackoverflow and modified to fit our needs
-// https://stackoverflow.com/questions/25046301/convert-url-to-file-or-blob-for-filereader-readasdataurl
-// it takes an url, converts it to a blob, passes on to filereader which can only fucking
-// read a blob and coverting a file to a blob is a fucking nightmare. I've wasted
-// my past 4 hours on getting all this shit to work. Reading a csv file in javascript
-// is like programming a nasa mars rover, perhaps that'd even be easier
-// thank goodness i don't have to deal with this mess of a language often.
-// long live python!
-
-// never fucking mind, the function below doesn't work
-// it has way to many syncing issues, the http request runs
-// either async or it doesnt work at all. So the program executes
-// before any data is return. Plus it was more complicated.
-// but thank goodness i finally found a better and way more
-// concise method i.e. the getClusterWordsFR function above
-
-// function getTheClusterWords(url){
-//     console.log("getting the cluster words..");
-//     var request = new XMLHttpRequest();
-//     request.open("GET", url, true);
-//     request.responseType = 'blob';
-//     console.log("rquest onlondingd")
-//     // how to pause the program until the function below executes
-//     request.onload = function() {
-//         var reader = new FileReader();
-//         reader.readAsText(request.response);
-//         reader.onload =  function (event) {
-//             const text = event.target.result; // the CSV content as string
-//             console.log("making the call to csvToArray")
-//             var data = csvToArray(text);
-//             // console.log(typeof(data)); //spoiler: it's of type array
-//             console.log("getTheClusterWords Sample: " + data[0]);
-//             }
-//         console.log("return reader result");
-//         // return reader.result;
-//     };
-//     console.log("senddd diittt");
-//     request.send();
-// }
-
-// no need for it either the getClusterWordsFR function above does everything
-// converts the csv file to an array 
-
-// function csvToArray(str, delimiter = ",") {
-//     // slice from start of text to the first \n index
-//     // use split to create an array from string by delimiter
-//     const headers = str.slice(0, str.indexOf("\n")).split(delimiter);
-//     // slice from \n index + 1 to the end of the text
-//     // use split to create an array of each csv value row
-//     var rows = str.slice(str.indexOf("\n") + 1).split("\n");
-//     // console.log(headers)
-//     console.log("csvToArray return rows")
-//     console.log("csvToArray sample: " + rows[0])
-//     return rows;
-// }
-
 function displayResultScreen(prediction_result){
         // get the image element and its parent to remove that image
     // element to replace it with a result image
