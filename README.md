@@ -21,9 +21,8 @@ Predict a word that belongs to the cloud (GAME)
   - That requires processing of scores of times more articles and hence words.
   - But currently I severely lack in resources. Cant even rent a cloud to host my scripts. I'm broke af.
   - And that's the very reason why this game lacks in so much potential dynamic functionality.
-  - But I'll try our best to get it done in the next few weeks.
-  - And maybe if a land a job miraciously, I'll be able to fund these things.
+  - And maybe if a land a job miraculously, I'll be able to fund my projects but for now, I'll keep doing what I can!
 
-### Last but not the least, If you have any feedback please let us know, we'll love to hear it to improve ourselves and this game.
+*If you have any feedback please let us know, I'll love to hear it to improve myself and this game.
 
 ## And if you'd like to contribute to this project, fork it or whatever, go ahead. Feel free to do so. This repo is all yours!
