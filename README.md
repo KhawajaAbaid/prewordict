@@ -14,7 +14,7 @@ Predict a word that belongs to the cloud (GAME)
   - This is one of the three different versions of this game I have planned and working on.
   - Currently the game is barely 20% complete.
   - All the word clouds are generated using NLP (Natural Language Processing) techniques, specifically TFIDF, SVD, KMeans and WordCloud (library).
-  - About 9K medium articles were processed and about 120K unique words were utilized from the articles to cluster the ones that best relate to each other.
+  - About 9K medium articles ([dataset here on kaggle](https://www.kaggle.com/datasets/fabiochiusano/medium-articles/ "fabiochiusano/medium-articles/") were processed and about 120K unique words were utilized from the articles to cluster the ones that best relate to each other.
   - These clusters were then used to generate the word clouds.
   - The game currently have just 30 word clusters, but these are good enough for testing this very early build.
   - My plan is to add hundreds of new clusters, as well as a lot of cool functionality.
