@@ -1,2 +1,2 @@
 # prewordict
-Predict the word in the cloud (GAME)
+Predict a word that belongs to the cloud (GAME)
