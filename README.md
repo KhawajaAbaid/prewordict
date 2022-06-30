@@ -23,6 +23,6 @@ Predict a word that belongs to the cloud (GAME)
   - And that's the very reason why this game lacks in so much potential dynamic functionality.
   - And maybe if a land a job miraculously, I'll be able to fund my projects but for now, I'll keep doing what I can!
 
-*If you have any feedback please let us know, I'll love to hear it to improve myself and this game.
+*If you have any feedback please let me know, I'll love to hear it to improve myself and this game.
 
 ## And if you'd like to contribute to this project, fork it or whatever, go ahead. Feel free to do so. This repo is all yours!
